@@ -1,0 +1,221 @@
+body {
+    background:url("../img/main-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-img-top{
+    border-radius: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background: rgba( 255, 255, 255, .9 )
+    url("../img/ajax-loader.gif")
+    50% 50%
+    no-repeat;
+}
+/* When the body has the loading class, we turn
+   the scrollbar is removed*/
+body.loading .modal {
+    overflow: hidden;
+}
+/* Anytime the body has the loading class the modal is visilbe */
+body.loading .modal {
+    display: block;
+}
+
+#loading-indicator {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.user-card{
+    box-shadow: 0 4px 8px 10px rgba(42,27,154, 0.2), 0 6px 20px 0 rgba(42,27, 154, 0.69);
+}
+.cool-shadow{
+    box-shadow: 0 4px 8px 0 rgba(42,27,154, 0.2), 0 6px 20px 0 rgba(42,27, 154, 0.69);
+
+}
+
+.navbar-brand{
+    cursor: default;
+}
+
+a {
+    color:#38006b;
+}
+.jumbotron {
+    margin-bottom: 0;
+    /*background-image: url("../img/banner.png");*/
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-color:transparent;
+    border-radius: 0;
+}
+
+.img-thumbnail {
+    padding:0;
+    border: 1px solid #38006b;
+}
+
+.no-pad-left{
+    padding-left: 0;
+}
+.max-width{
+    width:100%;
+}
+.register-image{
+    min-height: 100vh;
+}
+
+.left-column{
+    background-position-y:center;
+    background-image: url("../img/dragon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+
+.bg-primary-purple{
+    background-color:#6a1b9a;
+}
+
+.text-purple{
+color :#6a1b9a;
+}
+
+i:hover, .log-btn:hover {
+    opacity:0.5;
+}
+.upload-btn:hover {
+    background-color:#9c4dcc;
+}
+
+.bg-primary-light{
+
+}
+.bg-primary-dark{
+background-color:#38006b;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+.card{
+    border: 1px solid #38006b;
+    border-top: 10px solid #38006b;
+}
+
+.user-post-text{
+    font-size:1.5rem;
+    color:white;
+}
+.small-text {
+    font-size: 0.8rem;
+}
+
+.post-wrapper {
+    margin-top: 0.97rem;
+}
+
+@media (min-width: 992px) {
+    .post-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .post-card {
+        margin-bottom: 2.77rem;
+    }
+}
+.no-padding-top {
+    padding-top:0;
+}
+
+.border-radius{
+    border-radius:0 20px 20px 0 !important;
+}
+
+.no-border-radius {
+    border-radius:6px 0 0 6px;
+}
+
+.no-border-radius-left {
+    border-radius: 0 6px 6px 0;
+}
+
+
+.bg-comments {
+background: rgba(0,0,0,.03);
+}
+
+/*===============================================================================================================*/
+
+/*|||///Code for the main chrono-spark text animation\\\|||*/
+
+.blink_me {
+    animation: blink_me 2s linear infinite both;
+}
+
+@keyframes blink_me {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.main-text {
+    font-family: Audiowide, cursive;
+    font-weight: bold;
+    font-size: 7.1rem;
+    line-height: 7.1rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient( rgba(106,27, 154, 0.2),  rgba(106,27, 154, 0.8));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow:4px 5px  rgba(106,27, 154, 0.1);
+}
+.main-text:hover{
+    cursor:default;
+}
+
+label {
+    font-size: 1.2rem;
+
+}
+
+.buttons-color{
+    background-color:#2a1b9a;
+}
+#registered-change{
+    background:#eeeeee;
+    padding-bottom: 100%;
+}
+.side-column{
+    background: url("../img/side-bar.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
